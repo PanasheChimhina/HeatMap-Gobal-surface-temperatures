@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Heat Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <h3 id='title'>Monthly Global Surface Temperature</h3>
+    <h4 id='description'>Temperatures from 1753 - 2015 </br> Average Temp: 8.66℃</h4>
+    <div class="container">
+        <div class="canvas-container">
+            <div id='tooltip'></div>
+            <svg id='canvas'></svg>
+        </div>
+        <svg id='legend'>
+            <g>
+                <rect x="10" y="0" width="40" height="40" fill="SteelBlue"></rect>
+                <text x="60" y="20" fill="white">Variance of -1 or less</text>
+            </g>
+            <g>
+                <rect x="10" y="40" width="40" height="40" fill="LightSteelBlue"></rect>
+                <text x="60" y="60" fill="white">On or Below Average</text>
+            </g>
+            <g>
+                <rect x="10" y="80" width="40" height="40" fill="Orange"></rect>
+                <text x="60" y="100" fill="white">Above Average</text>
+            </g>
+            <g>
+                <rect x="10" y="120" width="40" height="40" fill="Crimson"></rect>
+                <text x="60" y="140" fill="white">Variance of +1 or more</text>
+            </g>
+        </svg>
+    </div>
+    <script src="./index.jsx" type="text/babel"></script>
+</body>
+
+
+</html>
