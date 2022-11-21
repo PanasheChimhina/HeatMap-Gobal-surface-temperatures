@@ -8,7 +8,7 @@
 
 ## Images
 
-![Standard Check](https://github.com/PanasheChimhina/HeatMap-Gobal-surface-temperatures/blob/main/images/2022-11-21 (8).png?raw=true)
+![Standard Check](https://github.com/PanasheChimhina/HeatMap-Gobal-surface-temperatures/blob/main/images/map.png?raw=true)
 
 
 
